@@ -1,0 +1,341 @@
+/*
+   Developer: James D. Pérez
+   Email: jamesdaniel09874@gmail.com
+   Phone Number: (787)-400-4265
+*/
+
+/* Google Font: Ubuntu Light 300 */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+/* Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    line-height: 1.7em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navbar */
+
+.navbar nav {
+    background: #000000;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.logo a:hover {
+    color: #000;
+    padding: 6px;
+    border-radius: 5%;
+    background: #fff;
+}
+
+.navbar nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.navbar nav ul li a {
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    color: #000000;
+    background: #fff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.line{
+    color: #fff;
+}
+
+
+/* Showcase banner */
+
+.banner-img {
+    background: url(../img/Miguel-Old-San-Juan.png) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+/* header content */
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.header-content {
+    text-align: center;
+    padding-top: 16%;
+}
+
+.header-content h1, .lead{
+    color: #fff;
+}
+
+.btn-light {
+    color: #000000;
+    padding: 10px;
+    border-radius: 5%;
+    background-color: #f4f4f4;
+}
+
+/* Product Container */
+
+.products-container{
+    padding: 20%;
+}
+
+
+/* Movil section */
+
+@media (max-width: 1952px) {
+    label.logo {
+        font-size: 25px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1258px) {
+    .checkbtn {
+        display: block;
+    }
+    .navbar ul {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .navbar ul li {
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .navbar ul li a {
+        font-size: 20px;
+        display: block;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #fff;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .main-footer img {
+        width: 5%;
+        margin: 0px 10px 10px 0px;
+        display: inline;
+    }
+    /* page content */
+    .container {
+        margin: 0px;
+    }
+    .flex-section {
+        display: block;
+    }
+    .video iframe {
+        display: none;
+        width: 100%;
+        border-radius: 0px;
+    }
+    .benefits {
+        height: 450px;
+        border-radius: 0px;
+    }
+    .startBusiness {
+        height: 600px;
+        border-radius: 0px;
+    }
+    /* feature class */
+    #features .box,
+    #contactus .box {
+        float: none;
+        margin: auto;
+        width: 100%;
+    }
+    #features .box p,
+    h3 {
+        text-align: center;
+    }
+    /* banner section */
+    .banner-img-min h2 {
+        color: #fff;
+        font-size: 45px;
+        text-align: center;
+        padding-top: 20%;
+    }
+    /* white box */
+    .box-white {
+        display: block;
+        flex: none;
+        width: 100%;
+        height: 430px;
+        margin: 10px 0px;
+        border-radius: 0;
+        padding: 30px 0;
+        color: #000;
+        box-shadow: none;
+        text-align: center;
+    }
+    /* blue box */
+    .box-blue {
+        display: block;
+        flex: none;
+        width: 100%;
+        height: 430px;
+        border-radius: 0px;
+        margin: 10px 0px;
+        padding: 30px 0;
+        color: #fff;
+        background-color: #1b9bff;
+        text-align: center;
+    }
+    .border-bottom {
+        border-bottom: #444 solid 1px;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner-img-3 h2,
+    .banner-img-min h2,
+    .banner-img-max h2 {
+        padding-top: 50%;
+        font-size: 35px;
+    }
+    .banner-img-3 p,
+    .banner-img-min p,
+    .banner-img-max p {
+        font-size: 20px;
+    }
+    /* box white */
+    .box-white div h2 {
+        font-size: 25px;
+        padding: 0px 30px;
+    }
+    .box-white div p {
+        font-size: 15px;
+        padding: 0px 30px;
+    }
+    .box-white div div {
+        margin: 20px 0px;
+    }
+    .box-white a {
+        color: #fff;
+        padding: 8px 70px;
+        margin: 30px;
+        border-radius: 5px;
+        background-color: #1b9bff;
+    }
+    /* box blue */
+    .box-blue div h2 {
+        font-size: 25px;
+        padding: 0px 30px;
+    }
+    .box-blue div p {
+        font-size: 15px;
+        padding: 0px 30px;
+    }
+    .box-blue div div {
+        margin: 20px 0px;
+    }
+    .box-blue a {
+        color: #1b9bff;
+        padding: 8px 70px;
+        margin: 30px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 540px) {
+    .startBusiness p {
+        margin: 0px;
+        font-size: 15px;
+    }
+    .benefits p {
+        font-size: 16px;
+        margin: 0px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner-img-min h2 {
+        font-size: 32px;
+        padding-top: 50%;
+    }
+    .banner-img-3 h2 {
+        font-size: 32px;
+        padding-top: 50%;
+    }
+    .banner-img-max h2 {
+        font-size: 32px;
+        padding-top: 50%;
+    }
+}
+
+@media (max-height: 500px) {
+    .banner-img-min h2 {
+        font-size: 32px;
+        padding-top: 15%;
+    }
+    .banner-img-3 h2 {
+        font-size: 32px;
+        padding-top: 15%;
+    }
+    .banner-img-max h2 {
+        font-size: 32px;
+        padding-top: 15%;
+    }
+}
