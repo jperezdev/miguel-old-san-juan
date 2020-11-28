@@ -28,7 +28,7 @@ a{
 /* Navbar */
 
 .navbar nav {
-    background: #000000;
+    background: #522D27;
     height: 80px;
     width: 100%;
 }
@@ -42,7 +42,7 @@ label.logo {
 }
 
 .logo a:hover {
-    color: #000;
+    color: #522D27;
     padding: 6px;
     border-radius: 5%;
     background: #fff;
@@ -68,7 +68,7 @@ label.logo {
 
 a.active,
 a:hover {
-    color: #000000;
+    color: #522D27;
     background: #fff;
     transition: .5s;
 }
@@ -117,17 +117,32 @@ a:hover {
 }
 
 .btn-light {
-    color: #000000;
+    color: #522D27;
     padding: 10px;
     border-radius: 5%;
     background-color: #f4f4f4;
 }
 
 .btn-light:hover{
-    color: #000000;
+    color: #522D27;
     background-color: #e2e1e1;
 }
 
+/* About us */
+
+.about-us{
+    padding: 15%;
+    text-align: center;
+}
+
+.about-us h2{
+    padding-bottom: 30px;
+}
+
+.about-us img{
+    height: 200px;
+    width: 200px;
+}
 /* Product Container */
 
 .products-container{
@@ -145,16 +160,45 @@ a:hover {
     justify-content: center;
     align-items: center;
     grid-gap: 20px;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 345px);
 }
 
 .products-items{
     width: 100%;
-    padding: 20px;
+    height: 330px;
     text-align: center;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
+
+.products-items img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+..products-items h3{
+    padding-top: 10px;
+}
+
+.products-items p{
+    padding: 10px 0px;
+}
+
+.addCar{
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #522D27;
+
+}
+
+.addCar:hover{
+    color: #fff;
+    background-color: #5f3832;
+}
+
 /* Movil section */
 
 @media (max-width: 1952px) {
@@ -197,78 +241,6 @@ a:hover {
     }
     #check:checked~ul {
         left: 0;
-    }
-    .main-footer img {
-        width: 5%;
-        margin: 0px 10px 10px 0px;
-        display: inline;
-    }
-    /* page content */
-    .container {
-        margin: 0px;
-    }
-    .flex-section {
-        display: block;
-    }
-    .video iframe {
-        display: none;
-        width: 100%;
-        border-radius: 0px;
-    }
-    .benefits {
-        height: 450px;
-        border-radius: 0px;
-    }
-    .startBusiness {
-        height: 600px;
-        border-radius: 0px;
-    }
-    /* feature class */
-    #features .box,
-    #contactus .box {
-        float: none;
-        margin: auto;
-        width: 100%;
-    }
-    #features .box p,
-    h3 {
-        text-align: center;
-    }
-    /* banner section */
-    .banner-img-min h2 {
-        color: #fff;
-        font-size: 45px;
-        text-align: center;
-        padding-top: 20%;
-    }
-    /* white box */
-    .box-white {
-        display: block;
-        flex: none;
-        width: 100%;
-        height: 430px;
-        margin: 10px 0px;
-        border-radius: 0;
-        padding: 30px 0;
-        color: #000;
-        box-shadow: none;
-        text-align: center;
-    }
-    /* blue box */
-    .box-blue {
-        display: block;
-        flex: none;
-        width: 100%;
-        height: 430px;
-        border-radius: 0px;
-        margin: 10px 0px;
-        padding: 30px 0;
-        color: #fff;
-        background-color: #1b9bff;
-        text-align: center;
-    }
-    .border-bottom {
-        border-bottom: #444 solid 1px;
     }
 
     .products{
