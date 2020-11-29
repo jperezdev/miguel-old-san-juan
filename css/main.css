@@ -378,6 +378,10 @@ a:hover {
     .event-left{
         padding-left: 25px;
     }
+
+    .header-content{
+        padding-top: 60px;
+    }
 }
 
 @media(max-width: 495px){
