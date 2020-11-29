@@ -374,15 +374,16 @@ a:hover {
     .aboutUS,.product-header,.event-header{
         font-size: 30px;
     }
+
+    .event-items img{
+        padding-left: 25px;
+    }
 }
 
 @media(max-width: 495px){
     .logo-footer{
         width: 200px;
         height: 200px;
-    }
-    .products-items img{
-        padding-left: 25px;
     }
     .main-footer .footer-content{
         grid-template-columns: 1fr;
