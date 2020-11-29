@@ -368,7 +368,11 @@ a:hover {
     }
 
     h2{
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .aboutUS,.product-header,.event-header{
+        font-size: 30px;
     }
 }
 
