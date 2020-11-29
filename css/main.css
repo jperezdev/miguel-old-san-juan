@@ -217,6 +217,36 @@ a:hover {
 }
 
 
+.events{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 400px);
+}
+
+.event-header{
+    color: #000000;
+    font-size: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+
+}
+
+.event-items{
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 150px);
+}
+
+
 /* Movil section */
 
 @media (max-width: 1952px) {
@@ -234,9 +264,10 @@ a:hover {
     .products{
         grid-template-columns: repeat(2, 350px);
     }
+
 }
 
-@media (max-width: 1258px) {
+@media (max-width: 1358px) {
     .checkbtn {
         display: block;
     }
@@ -267,6 +298,12 @@ a:hover {
         left: 0;
     }
 
+    /* Events */
+
+    .events{
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media(max-width: 740px){
@@ -275,57 +312,6 @@ a:hover {
     }
 }
 
-@media (max-width: 600px) {
-    .banner-img-3 h2,
-    .banner-img-min h2,
-    .banner-img-max h2 {
-        padding-top: 50%;
-        font-size: 35px;
-    }
-    .banner-img-3 p,
-    .banner-img-min p,
-    .banner-img-max p {
-        font-size: 20px;
-    }
-    /* box white */
-    .box-white div h2 {
-        font-size: 25px;
-        padding: 0px 30px;
-    }
-    .box-white div p {
-        font-size: 15px;
-        padding: 0px 30px;
-    }
-    .box-white div div {
-        margin: 20px 0px;
-    }
-    .box-white a {
-        color: #fff;
-        padding: 8px 70px;
-        margin: 30px;
-        border-radius: 5px;
-        background-color: #1b9bff;
-    }
-    /* box blue */
-    .box-blue div h2 {
-        font-size: 25px;
-        padding: 0px 30px;
-    }
-    .box-blue div p {
-        font-size: 15px;
-        padding: 0px 30px;
-    }
-    .box-blue div div {
-        margin: 20px 0px;
-    }
-    .box-blue a {
-        color: #1b9bff;
-        padding: 8px 70px;
-        margin: 30px;
-        border-radius: 5px;
-        background-color: #fff;
-    }
-}
 
 @media (max-width: 540px) {
     .startBusiness p {
