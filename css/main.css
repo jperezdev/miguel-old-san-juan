@@ -8,6 +8,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
+/* Google Font: Pacifico */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 
 /* Reset */
 
@@ -131,12 +136,13 @@ a:hover {
 /* About us */
 
 .about-us{
-    padding: 15%;
+    padding: 5% 15%;
     text-align: center;
 }
 
 .about-us h2{
-    padding-bottom: 30px;
+    font-size: 40px;
+    padding-bottom: 40px;
 }
 
 .about-us img{
@@ -146,13 +152,16 @@ a:hover {
 /* Product Container */
 
 .products-container{
-    padding: 15%;
+    padding: 5% 15%;
+    background-color: #522D27;
 }
 
 .product-header{
-    font-size: 30px;
+    color: #fff;
+    font-size: 40px;
     padding-bottom: 50px;
     text-align: center;
+
 }
 
 .products{
@@ -160,7 +169,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     grid-gap: 20px;
-    grid-template-columns: repeat(3, 345px);
+    grid-template-columns: repeat(4, 300px);
 }
 
 .products-items{
@@ -168,6 +177,7 @@ a:hover {
     height: 340px;
     text-align: center;
     border-radius: 10px;
+    background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 
@@ -180,6 +190,7 @@ a:hover {
 
 .products-items h3{
     padding-top: 10px;
+    
 }
 
 .products-items p{
@@ -199,6 +210,13 @@ a:hover {
     background-color: #5f3832;
 }
 
+/* Section: Events */
+
+.events-container{
+    padding: 5% 15%;
+}
+
+
 /* Movil section */
 
 @media (max-width: 1952px) {
@@ -209,8 +227,14 @@ a:hover {
     nav ul li a {
         font-size: 16px;
     }
+
 }
 
+@media(max-width: 1400px){
+    .products{
+        grid-template-columns: repeat(2, 350px);
+    }
+}
 
 @media (max-width: 1258px) {
     .checkbtn {
@@ -243,12 +267,9 @@ a:hover {
         left: 0;
     }
 
-    .products{
-        grid-template-columns: repeat(2, 350px);
-    }
 }
 
-@media(max-width: 756px){
+@media(max-width: 740px){
     .products{
         grid-template-columns: 1fr;
     }
