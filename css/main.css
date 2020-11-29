@@ -379,8 +379,8 @@ a:hover {
         padding-left: 25px;
     }
 
-    .header-content{
-        padding-top: 60px;
+    .header-content h1{
+        padding-top: 5rem;
     }
 }
 
