@@ -374,6 +374,10 @@ a:hover {
     .aboutUS,.product-header,.event-header{
         font-size: 30px;
     }
+
+    .event-left{
+        padding-left: 25px;
+    }
 }
 
 @media(max-width: 495px){
