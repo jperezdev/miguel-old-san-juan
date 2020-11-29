@@ -394,4 +394,10 @@ a:hover {
     }
 }
 
+@media(max-height: 300px){
+    .header-content h1{
+        padding-top: 10px;
+    }
+}
+
 
