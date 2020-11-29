@@ -246,7 +246,38 @@ a:hover {
     grid-template-columns: repeat(2, 150px);
 }
 
+/* Main Footer */
 
+.main-footer{
+    padding: 5%;
+    color: #fff;
+    background-color: #522D27;
+}
+
+.main-footer .footer-content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 250px);
+}
+
+.main-footer .footer-content div p, .footer-link{
+    font-size: 12px;
+}
+.sobreNosotros{
+    padding-bottom: 20px;
+}
+
+.location-footer{
+    padding-bottom: 41px;
+}
+
+.logo-footer{
+    width: 110px;
+    height: 110px;
+    text-align: center;
+}
 /* Movil section */
 
 @media (max-width: 1952px) {
@@ -258,12 +289,17 @@ a:hover {
         font-size: 16px;
     }
 
+    .footer-content{
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media(max-width: 1400px){
     .products{
         grid-template-columns: repeat(2, 350px);
     }
+
 
 }
 
