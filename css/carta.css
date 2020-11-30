@@ -1,0 +1,17 @@
+#products-container-carta{
+    padding: 5% 15%;
+}
+
+.product-header-carta{
+    color: #000;
+    font-size: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+
+}
+
+.banner-img-carta {
+    background: url(../img/carta-banner-img.png) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
