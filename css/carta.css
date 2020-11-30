@@ -9,9 +9,3 @@
     text-align: center;
 
 }
-
-.banner-img-carta {
-    background: url(../img/carta-banner-img.png) no-repeat;
-    background-size: cover;
-    height: calc(100vh - 80px);
-}
