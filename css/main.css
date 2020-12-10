@@ -298,3 +298,10 @@ a:hover {
 .footer-icons{
     padding: 0px 10px;
 }
+
+/* Banner Proximanete */
+
+.proximante-img{
+    padding-top: 3%;
+    text-align: center;
+}
